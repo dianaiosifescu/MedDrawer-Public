@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/containerSearch"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/tvTypeSearch"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:drawablePadding="10dp"
+        android:hint="Search existing medicine here..."
+        android:textSize="16dp"
+        android:inputType="textAutoComplete"
+        android:background="@null"
+        android:drawableStart="@drawable/ic_search2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTypeSearch"
+        app:layout_constraintTop_toTopOf="@id/tvTypeSearch"
+        android:background="@drawable/ic_cancel2"
+        app:layout_constraintEnd_toEndOf="@id/tvTypeSearch"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tvAddNew"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="ADD NEW MEDICINE"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWite"
+        app:layout_constraintTop_toBottomOf="@id/tvTypeSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAddNew"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

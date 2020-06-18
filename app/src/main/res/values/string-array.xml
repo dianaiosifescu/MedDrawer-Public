@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="med_type_array">
+        <item>none</item>
+        <item>pill</item>
+        <item>band aid</item>
+        <item>syrup</item>
+        <item>cream</item>
+        <item>gel</item>
+        <item>drops</item>
+        <item>drink</item>
+        <item>suppository</item>
+        <item>spray</item>
+    </string-array>
+
+    <string-array name="med_amount_left_array">
+        <item>full</item>
+        <item>75%</item>
+        <item>50%</item>
+        <item>almost empty</item>
+    </string-array>
+
+    <string-array name="sort_types">
+        <item>Name(default)</item>
+        <item>Expiration date</item>
+        <item>Amount left</item>
+    </string-array>
+</resources>
